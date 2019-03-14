@@ -38,5 +38,9 @@
   "doctor": {
     "dataSource": "mongo",
     "public": true
+  },
+  "consultorio": {
+    "dataSource": "mongo",
+    "public": true
   }
 }

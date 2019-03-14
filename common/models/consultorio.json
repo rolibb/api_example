@@ -1,0 +1,32 @@
+{
+  "name": "consultorio",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "direccion": {
+      "type": "string",
+      "required": true
+    },
+    "ubicacion": {
+      "type": "geopoint"
+    },
+    "horario": {
+      "type": "string"
+  },
+  "doctor_id": {
+    "type": "string"
+  }
+  },
+  "validations": [],
+  "relations": {
+      "doctor": {
+          "type": "belongsTo",
+          "model": "doctor"
+      }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -20,7 +20,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+      "ubicaciones": {
+          "type": "hasMany",
+          "model": "consultorio",
+          "foreignKey": "doctor_id"
+      }
+  },
   "acls": [],
   "methods": {}
 }
